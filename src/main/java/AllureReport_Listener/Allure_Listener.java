@@ -7,7 +7,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import baseClass.browserSelection;
+import Base.MainBaseFeature;
 import io.qameta.allure.Attachment;
 
 public class Allure_Listener implements ITestListener{
@@ -37,7 +37,7 @@ public class Allure_Listener implements ITestListener{
 	//@Override
 	public void onStart(ITestContext iTestContext) {
 		System.out.println("I am in onStart method " + iTestContext.getName());
-		iTestContext.setAttribute("WebDriver", browserSelection.driver);
+		iTestContext.setAttribute("WebDriver", MainBaseFeature.driver);
 	}
 
 	//@Override
@@ -59,7 +59,7 @@ public class Allure_Listener implements ITestListener{
 	public void onTestFailure(ITestResult iTestResult) {
 		System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
 		Object testClass = iTestResult.getInstance();
-		WebDriver driver = browserSelection.driver;
+		WebDriver driver = MainBaseFeature.driver;
 		// Allure ScreenShotRobot and SaveTestLog
 		if (driver instanceof WebDriver) {
 			System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));

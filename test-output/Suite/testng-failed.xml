@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="HBI_UI.Test_HBI_Foreign_dashboard_visible">
+        <methods>
+          <include name="dashboard_will_be_displayed"/>
+          <include name="getResult"/>
+          <include name="user_enters_Healthcare_gmail_com_and_Healthcare"/>
+          <include name="beforeSuit"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- HBI_UI.Test_HBI_Foreign_dashboard_visible -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
