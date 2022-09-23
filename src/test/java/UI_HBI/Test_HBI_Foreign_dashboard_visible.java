@@ -16,8 +16,8 @@ import org.testng.asserts.SoftAssert;
 
 import AllureReport_Listener.Allure_Listener;
 import Base.MainBaseFeature;
-import HBI.Obj_HBI_Foreign_dashboard_visible;
-import Utilities.ReadExcel;
+import HBI_OBJ.Obj_HBI_Foreign_dashboard_visible;
+import Utility.ReadExcel;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;

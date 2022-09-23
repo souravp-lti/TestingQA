@@ -13,9 +13,9 @@ import org.testng.asserts.SoftAssert;
 
 import AllureReport_Listener.Allure_Listener;
 import Base.MainBaseFeature;
-import HBI.Obj_HBI_Foreign_dashboard_visible;
-import HBI.Obj_HBI_HomePage_Features_visible;
-import Utilities.ReadExcel;
+import HBI_OBJ.Obj_HBI_Foreign_dashboard_visible;
+import HBI_OBJ.Obj_HBI_HomePage_Features_visible;
+import Utility.ReadExcel;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import io.qameta.allure.Description;

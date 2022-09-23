@@ -1,4 +1,4 @@
-package HBI;
+package HBI_OBJ;
 
 
 import java.io.IOException;
@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
 
 import Base.MainBaseFeature;
-import Utilities.ReadExcel;
+import Utility.ReadExcel;
 import io.qameta.allure.Step;
 
 

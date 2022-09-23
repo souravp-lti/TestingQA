@@ -1,4 +1,4 @@
-package HBI;
+package HBI_OBJ;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.asserts.SoftAssert;
 
 import Base.MainBaseFeature;
-import Utilities.ReadExcel;
+import Utility.ReadExcel;
 import io.qameta.allure.Step;
 
 public class Obj_HBI_Foreign_dashboard_visible extends MainBaseFeature {
