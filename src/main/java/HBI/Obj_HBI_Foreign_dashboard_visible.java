@@ -19,7 +19,7 @@ public class Obj_HBI_Foreign_dashboard_visible extends MainBaseFeature {
 		 
 	SoftAssert softAssert = new SoftAssert();
 	ReadExcel takeData = new ReadExcel();
-	
+	//
 	@Step("OBJ-1")
     public void clickLoginRegisterationButton() throws InterruptedException, IOException {    
     	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
