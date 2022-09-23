@@ -39,7 +39,7 @@ public class MainBaseFeature {
     public String readPropertyFile(String value) throws IOException
     {
         //Properties prop = new Properties();
-        FileInputStream file = new FileInputStream("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.21\\"
+        FileInputStream file = new FileInputStream("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.23\\"
         		+ "\\src\\\\main\\\\java\\\\Configuration\\\\configDetails.properties");
         prop.load(file);
         return prop.getProperty(value);
@@ -97,7 +97,7 @@ public class MainBaseFeature {
     @BeforeSuite
     public void beforeSuit()
     {
-        spark = new ExtentSparkReporter("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.21\\\\EXTENT_REPORT"+"\\\\ExtentReport.html");
+        spark = new ExtentSparkReporter("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.23\\\\EXTENT_REPORT"+"\\\\ExtentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
          
