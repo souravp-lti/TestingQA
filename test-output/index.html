@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\USER\eclipse-workspace\ABDM_Automation_Script.v.2\TESTNG_EXECUTOR\testng.xml</span>
+                    <span>C:\Users\USER\eclipse-workspace\ABDM_Automation_Script.v.18\TESTNG_EXECUTOR\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -255,8 +255,9 @@
                   </a> <!-- dashboard_will_be_displayed -->
                   <span class="method-name">dashboard_will_be_displayed</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Cannot proceed without entering emailID expected [false] but found [true],
 	Entered invalid UserID expected [false] but found [true]
-	at HBI_UI.Test_HBI_Foreign_dashboard_visible.dashboard_will_be_displayed(Test_HBI_Foreign_dashboard_visible.java:169)
+	at HBI_UI.Test_HBI_Foreign_dashboard_visible.dashboard_will_be_displayed(Test_HBI_Foreign_dashboard_visible.java:190)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
@@ -268,8 +269,9 @@
                   </a> <!-- user_enters_Healthcare_gmail_com_and_Healthcare -->
                   <span class="method-name">user_enters_Healthcare_gmail_com_and_Healthcare</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Cannot proceed without entering emailID expected [false] but found [true],
 	Entered invalid UserID expected [false] but found [true]
-	at HBI_UI.Test_HBI_Foreign_dashboard_visible.user_enters_Healthcare_gmail_com_and_Healthcare(Test_HBI_Foreign_dashboard_visible.java:142)
+	at HBI_UI.Test_HBI_Foreign_dashboard_visible.user_enters_Healthcare_gmail_com_and_Healthcare(Test_HBI_Foreign_dashboard_visible.java:157)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
@@ -316,21 +318,6 @@
                   <a name="user_selects_Foreign_Employer_and_clicks_on_Login_button">
                   </a> <!-- user_selects_Foreign_Employer_and_clicks_on_Login_button -->
                   <span class="method-name">user_selects_Foreign_Employer_and_clicks_on_Login_button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Drug_Registry_APIs.suggestion</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="suggestionSearchTextBox">
-                  </a> <!-- suggestionSearchTextBox -->
-                  <span class="method-name">suggestionSearchTextBox</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -455,10 +442,25 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Drug_Registry_APIs.suggestion</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="suggestionSearchTextBox">
+                  </a> <!-- suggestionSearchTextBox -->
+                  <span class="method-name">suggestionSearchTextBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USER\eclipse-workspace\ABDM_Automation_Script.v.2\TESTNG_EXECUTOR\testng.xml</span>
+            <span class="header-content">C:\Users\USER\eclipse-workspace\ABDM_Automation_Script.v.18\TESTNG_EXECUTOR\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -466,7 +468,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;ExtentReport_Listener.Listener&quot;/&gt;
+    &lt;listener class-name=&quot;AllureReport_Listener.Allure_Listener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
@@ -516,104 +518,104 @@ data.addRows(24);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'user_enters_Healthcare_gmail_com_and_Healthcare')
 data.setCell(0, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
-data.setCell(0, 3, 91915);
+data.setCell(0, 3, 60891);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'dashboard_will_be_displayed')
 data.setCell(1, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
-data.setCell(1, 3, 30053);
+data.setCell(1, 3, 30060);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'user_opens_the_URL')
-data.setCell(2, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(2, 3, 5931);
+data.setCell(2, 1, 'user_clicks_on_login_Register_button')
+data.setCell(2, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
+data.setCell(2, 3, 5812);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'user_clicks_on_login_Register_button')
-data.setCell(3, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
-data.setCell(3, 3, 5330);
+data.setCell(3, 1, 'suggestionSearchTextBox')
+data.setCell(3, 2, 'Drug_Registry_APIs.suggestion')
+data.setCell(3, 3, 3972);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'suggestionSearchTextBox')
-data.setCell(4, 2, 'Drug_Registry_APIs.suggestion')
-data.setCell(4, 3, 4185);
+data.setCell(4, 1, 'user_opens_URL')
+data.setCell(4, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
+data.setCell(4, 3, 2931);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'user_opens_URL')
-data.setCell(5, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
-data.setCell(5, 3, 4114);
+data.setCell(5, 1, 'user_opens_the_URL')
+data.setCell(5, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
+data.setCell(5, 3, 2620);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'user_Launch_Chrome')
 data.setCell(6, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(6, 3, 3523);
+data.setCell(6, 3, 1520);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'user_Launch_Chrome_browser')
 data.setCell(7, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
-data.setCell(7, 3, 1168);
+data.setCell(7, 3, 774);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'user_selects_Foreign_Employer_and_clicks_on_Login_button')
 data.setCell(8, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
-data.setCell(8, 3, 581);
+data.setCell(8, 3, 219);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'homeButton_will_be_displayed')
+data.setCell(9, 1, 'empDir_will_be_displayed')
 data.setCell(9, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(9, 3, 291);
+data.setCell(9, 3, 126);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'search_button_will_be_displayed')
+data.setCell(10, 1, 'dashboardButton_will_be_displayed')
 data.setCell(10, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(10, 3, 16);
+data.setCell(10, 3, 5);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'abtUs_will_be_displayed')
+data.setCell(11, 1, 'regd_prof_num_will_be_displayed')
 data.setCell(11, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(11, 3, 16);
+data.setCell(11, 3, 5);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'contactUs_will_be_displayed')
+data.setCell(12, 1, 'doc_num_will_be_displayed')
 data.setCell(12, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(12, 3, 16);
+data.setCell(12, 3, 4);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'nurse_num_will_be_displayed')
+data.setCell(13, 1, 'other_regd_num_will_be_displayed')
 data.setCell(13, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(13, 3, 15);
+data.setCell(13, 3, 4);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'health_care_textbox_will_be_displayed')
+data.setCell(14, 1, 'nurse_num_will_be_displayed')
 data.setCell(14, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(14, 3, 5);
+data.setCell(14, 3, 4);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'click_on_Login')
 data.setCell(15, 2, 'HBI_UI.Test_HBI_Foreign_dashboard_visible')
-data.setCell(15, 3, 3);
+data.setCell(15, 3, 4);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'grievanceButton_will_be_displayed')
+data.setCell(16, 1, 'faq_will_be_displayed')
 data.setCell(16, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(16, 3, 0);
+data.setCell(16, 3, 4);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'recruitersDir_will_be_displayed')
+data.setCell(17, 1, 'grievanceButton_will_be_displayed')
 data.setCell(17, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(17, 3, 0);
+data.setCell(17, 3, 4);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'other_regd_num_will_be_displayed')
+data.setCell(18, 1, 'abtUs_will_be_displayed')
 data.setCell(18, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(18, 3, 0);
+data.setCell(18, 3, 3);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'empDir_will_be_displayed')
+data.setCell(19, 1, 'search_button_will_be_displayed')
 data.setCell(19, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(19, 3, 0);
+data.setCell(19, 3, 2);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'doc_num_will_be_displayed')
+data.setCell(20, 1, 'contactUs_will_be_displayed')
 data.setCell(20, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(20, 3, 0);
+data.setCell(20, 3, 2);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'faq_will_be_displayed')
+data.setCell(21, 1, 'recruitersDir_will_be_displayed')
 data.setCell(21, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(21, 3, 0);
+data.setCell(21, 3, 1);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'dashboardButton_will_be_displayed')
+data.setCell(22, 1, 'homeButton_will_be_displayed')
 data.setCell(22, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(22, 3, 0);
+data.setCell(22, 3, 1);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'regd_prof_num_will_be_displayed')
+data.setCell(23, 1, 'health_care_textbox_will_be_displayed')
 data.setCell(23, 2, 'HBI_UI.Test_HBI_HomePage_Features_Visible')
-data.setCell(23, 3, 0);
+data.setCell(23, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -649,234 +651,234 @@ return data;
               <div class="chronological-class-name">HBI_UI.Test_HBI_HomePage_Features_Visible</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">extentReport</span>
-                <span class="method-start">361 ms</span>
+                <span class="method-start">326 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Drug_Registry_APIs.suggestion</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">extentReport</span>
-                <span class="method-start">365 ms</span>
+                <span class="method-start">330 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">suggestionSearchTextBox</span>
-                <span class="method-start">403 ms</span>
+                <span class="method-start">386 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=suggestionSearchTextBox status=SUCCESS method=suggestion.suggestionSearchTextBox()[...)</span>
-                <span class="method-start">4668 ms</span>
+                <span class="method-start">4487 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">HBI_UI.Test_HBI_HomePage_Features_Visible</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">user_Launch_Chrome</span>
-                <span class="method-start">4707 ms</span>
+                <span class="method-start">4508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=user_Launch_Chrome status=SUCCESS method=Test_HBI_HomePage_Features_Visible.user_La...)</span>
-                <span class="method-start">8239 ms</span>
+                <span class="method-start">6033 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">user_opens_the_URL</span>
-                <span class="method-start">8247 ms</span>
+                <span class="method-start">6038 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=user_opens_the_URL status=SUCCESS method=Test_HBI_HomePage_Features_Visible.user_op...)</span>
-                <span class="method-start">14186 ms</span>
+                <span class="method-start">8663 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">homeButton_will_be_displayed</span>
-                <span class="method-start">14186 ms</span>
+                <span class="method-start">8666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=homeButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visib...)</span>
-                <span class="method-start">14477 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">exit([TestResult name=recruitersDir_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Vi...)</span>
-                <span class="method-start">14493 ms</span>
+                <span class="method-start">8669 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">recruitersDir_will_be_displayed</span>
-                <span class="method-start">14493 ms</span>
+                <span class="method-start">8670 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">exit([TestResult name=recruitersDir_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Vi...)</span>
+                <span class="method-start">8673 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">empDir_will_be_displayed</span>
-                <span class="method-start">14509 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">abtUs_will_be_displayed</span>
-                <span class="method-start">14524 ms</span>
+                <span class="method-start">8675 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=empDir_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.e...)</span>
-                <span class="method-start">14524 ms</span>
+                <span class="method-start">8806 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">abtUs_will_be_displayed</span>
+                <span class="method-start">8807 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=abtUs_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.ab...)</span>
-                <span class="method-start">14546 ms</span>
+                <span class="method-start">8813 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">faq_will_be_displayed</span>
-                <span class="method-start">14556 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">contactUs_will_be_displayed</span>
-                <span class="method-start">14571 ms</span>
+                <span class="method-start">8815 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=faq_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible.faq_...)</span>
-                <span class="method-start">14571 ms</span>
+                <span class="method-start">8823 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">contactUs_will_be_displayed</span>
+                <span class="method-start">8826 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=contactUs_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visibl...)</span>
-                <span class="method-start">14587 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">exit([TestResult name=dashboardButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_...)</span>
-                <span class="method-start">14603 ms</span>
+                <span class="method-start">8830 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">dashboardButton_will_be_displayed</span>
-                <span class="method-start">14603 ms</span>
+                <span class="method-start">8834 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">exit([TestResult name=dashboardButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_...)</span>
+                <span class="method-start">8842 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">grievanceButton_will_be_displayed</span>
-                <span class="method-start">14619 ms</span>
+                <span class="method-start">8845 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=grievanceButton_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_...)</span>
-                <span class="method-start">14635 ms</span>
+                <span class="method-start">8853 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">health_care_textbox_will_be_displayed</span>
-                <span class="method-start">14646 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">search_button_will_be_displayed</span>
-                <span class="method-start">14651 ms</span>
+                <span class="method-start">8857 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=health_care_textbox_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Featu...)</span>
-                <span class="method-start">14651 ms</span>
+                <span class="method-start">8860 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">search_button_will_be_displayed</span>
+                <span class="method-start">8862 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=search_button_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Vi...)</span>
-                <span class="method-start">14667 ms</span>
+                <span class="method-start">8866 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">regd_prof_num_will_be_displayed</span>
-                <span class="method-start">14698 ms</span>
+                <span class="method-start">8870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=regd_prof_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Vi...)</span>
-                <span class="method-start">14714 ms</span>
+                <span class="method-start">8878 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">doc_num_will_be_displayed</span>
-                <span class="method-start">14714 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">nurse_num_will_be_displayed</span>
-                <span class="method-start">14732 ms</span>
+                <span class="method-start">8882 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=doc_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visible....)</span>
-                <span class="method-start">14732 ms</span>
+                <span class="method-start">8890 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">nurse_num_will_be_displayed</span>
+                <span class="method-start">8893 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=nurse_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_Visibl...)</span>
-                <span class="method-start">14762 ms</span>
+                <span class="method-start">8907 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">other_regd_num_will_be_displayed</span>
-                <span class="method-start">14778 ms</span>
+                <span class="method-start">8916 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=other_regd_num_will_be_displayed status=SUCCESS method=Test_HBI_HomePage_Features_V...)</span>
-                <span class="method-start">14794 ms</span>
+                <span class="method-start">8925 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">HBI_UI.Test_HBI_Foreign_dashboard_visible</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">user_Launch_Chrome_browser</span>
-                <span class="method-start">14794 ms</span>
+                <span class="method-start">8928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=user_Launch_Chrome_browser status=SUCCESS method=Test_HBI_Foreign_dashboard_visible...)</span>
-                <span class="method-start">15962 ms</span>
+                <span class="method-start">9705 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">user_opens_URL</span>
-                <span class="method-start">15978 ms</span>
+                <span class="method-start">9708 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=user_opens_URL status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.user_opens_...)</span>
-                <span class="method-start">20094 ms</span>
+                <span class="method-start">12640 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">user_clicks_on_login_Register_button</span>
-                <span class="method-start">20100 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">user_selects_Foreign_Employer_and_clicks_on_Login_button</span>
-                <span class="method-start">25439 ms</span>
+                <span class="method-start">12642 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=user_clicks_on_login_Register_button status=SUCCESS method=Test_HBI_Foreign_dashboa...)</span>
-                <span class="method-start">25439 ms</span>
+                <span class="method-start">18459 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">user_selects_Foreign_Employer_and_clicks_on_Login_button</span>
+                <span class="method-start">18470 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=user_selects_Foreign_Employer_and_clicks_on_Login_button status=SUCCESS method=Test...)</span>
-                <span class="method-start">26020 ms</span>
+                <span class="method-start">18692 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">user_enters_Healthcare_gmail_com_and_Healthcare</span>
-                <span class="method-start">26028 ms</span>
+                <span class="method-start">18694 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=user_enters_Healthcare_gmail_com_and_Healthcare status=FAILURE method=Test_HBI_Fore...)</span>
-                <span class="method-start">117951 ms</span>
+                <span class="method-start">79918 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">click_on_Login</span>
-                <span class="method-start">118891 ms</span>
+                <span class="method-start">80179 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=click_on_Login status=SUCCESS method=Test_HBI_Foreign_dashboard_visible.click_on_Lo...)</span>
-                <span class="method-start">118897 ms</span>
+                <span class="method-start">80186 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">dashboard_will_be_displayed</span>
-                <span class="method-start">118901 ms</span>
+                <span class="method-start">80188 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=dashboard_will_be_displayed status=FAILURE method=Test_HBI_Foreign_dashboard_visibl...)</span>
-                <span class="method-start">148959 ms</span>
+                <span class="method-start">110698 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">149787 ms</span>
+                <span class="method-start">111151 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">HBI_UI.Test_HBI_HomePage_Features_Visible</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">150331 ms</span>
+                <span class="method-start">111650 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Drug_Registry_APIs.suggestion</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">150415 ms</span>
+                <span class="method-start">111699 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

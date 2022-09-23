@@ -21,7 +21,7 @@ public class Listener implements ITestListener
 	 
 	public void beforeTest()
 	{
-		extent = new ExtentReports("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.2\\\\EXTENT_REPORT"+"\\\\ExtentReport.html", true);
+		extent = new ExtentReports("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.20\\\\EXTENT_REPORT"+"\\\\ExtentReport.html", true);
 		//extent = new ExtentReports(brSel.readPropertyFile("extentReportPath")+"\\\\ExtentReport.html", true);		
 		extent.addSystemInfo("Host Name", "ENVY-HP");
 		extent.addSystemInfo("User Name", "Sourav");

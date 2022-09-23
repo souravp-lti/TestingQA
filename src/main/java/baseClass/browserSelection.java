@@ -30,7 +30,7 @@ public class browserSelection extends Listener{
     public String readPropertyFile(String value) throws IOException
     {
         //Properties prop = new Properties();
-        FileInputStream file = new FileInputStream("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.2\\"
+        FileInputStream file = new FileInputStream("C:\\\\Users\\\\USER\\\\eclipse-workspace\\\\ABDM_Automation_Script.v.20\\"
         		+ "\\src\\\\main\\\\java\\\\Configuration\\\\configDetails.properties");
         prop.load(file);
         return prop.getProperty(value);

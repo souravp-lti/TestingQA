@@ -10,18 +10,21 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-
+import AllureReport_Listener.Allure_Listener;
 import ObjClass.Obj_HBI_Foreign_dashboard_visible;
 import baseClass.browserSelection;
-
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import utils.takeExcelData;
 
 
-//@Listeners(testNGListener.customListenerClass.class)   //IMPORTANT TO KNOW WHEN TO GO FOR SCREENSHOT
+@Listeners(Allure_Listener.class)   //IMPORTANT TO KNOW WHEN TO GO FOR SCREENSHOT
 public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
 	
 	Obj_HBI_Foreign_dashboard_visible FELoginObj;
@@ -44,8 +47,9 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
 	@AfterTest
 	public void endReport()
 	{
-		afterTest();
 		driver.quit();
+		afterTest();
+		
 	}
 	
 	@AfterMethod
@@ -59,6 +63,9 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
     
     
 	@Test(priority = 1)
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("user Launch Chrome browser") 
+	@Story("To verify that chrome browser was launched properly")
     public void user_Launch_Chrome_browser() throws InterruptedException,IOException {
     	test = extent.startTest("user_Launch_Chrome_browser");
         initialization();   
@@ -66,16 +73,20 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
     
         
     @Test(priority = 2)
+    @Severity(SeverityLevel.CRITICAL)
+	@Description("user opens URL") 
+    @Story("To verify that URL opened properly")
     public void user_opens_URL() throws IOException,InterruptedException {
-    	
     	test = extent.startTest("user_opens_URL");
     	driver.get(takeData.readExcelFile("testData",1,1));
     	
     }
 
     @Test(priority = 3)
+    @Severity(SeverityLevel.BLOCKER)
+	@Description("user clicks on login Register button") 
+    @Story("User able to find and click on Register button")
     public void user_clicks_on_login_Register_button() throws InterruptedException, IOException {
-    	
     	test = extent.startTest("user_clicks_on_login_Register_button");
         FELoginObj = new Obj_HBI_Foreign_dashboard_visible();
         FELoginObj.clickLoginRegisterationButton();
@@ -84,8 +95,10 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
 
  
     @Test(priority = 4)
+    @Severity(SeverityLevel.BLOCKER)
+	@Description("user selects Foreign Employer and clicks on Login button") 
+    @Story("User able to find and select Foreign Employer radio button")
     public void user_selects_Foreign_Employer_and_clicks_on_Login_button() throws InterruptedException, IOException {
-    	
     	test = extent.startTest("user_selects_Foreign_Employer_and_clicks_on_Login_button");
         FELoginObj.selectUserTypeAsFE();
         FELoginObj.clickOnUserTypePopupLogin();
@@ -93,8 +106,10 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
     }
 
     @Test(priority = 5)
+    @Severity(SeverityLevel.NORMAL)
+	@Description("user enters Healthcare gmail com and Healthcare") 
+    @Story("User enters username and password")
     public void user_enters_Healthcare_gmail_com_and_Healthcare() throws InterruptedException, IOException {
-    	
     	test = extent.startTest("user_enters_Healthcare_gmail_com_and_Healthcare");
             //FELoginObj.setEmailID(readPropertyFile("userEmail"));
     	    FELoginObj.setEmailID(takeData.readExcelFile("testData",2,1));
@@ -145,6 +160,9 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
     }
 
     @Test(priority = 6)
+    @Severity(SeverityLevel.CRITICAL)
+	@Description("click_on_Login") 
+    @Story("User able to click on Login button")
     public void click_on_Login() throws InterruptedException {
     	
     	test = extent.startTest("click_on_Login");
@@ -154,6 +172,9 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
 
  
     @Test(priority = 7)
+    @Severity(SeverityLevel.NORMAL)
+	@Description("dashboard will be displayed") 
+    @Story("User able to see dashboard")
     public void dashboard_will_be_displayed() throws InterruptedException {
     	
     	test = extent.startTest("dashboard_will_be_displayed");
@@ -168,7 +189,7 @@ public class Test_HBI_Foreign_dashboard_visible extends browserSelection{
     	
     	softAssert.assertAll();
     	
-        driver.quit();
+        //driver.quit();
         //System.out.println("closed");
         
     }

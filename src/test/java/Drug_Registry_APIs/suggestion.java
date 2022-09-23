@@ -11,6 +11,10 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import baseClass.browserSelection;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -47,6 +51,9 @@ public class suggestion extends browserSelection{
 	//--------------------------------------------extant-------------------------------//
 	
 	@Test
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("To Check the suggestion API is working properly")
+	@Story("To check the suggestion API is working properly")
 	void suggestionSearchTextBox() throws IOException {
 		//System.out.print(useData.readExcelFile("Drug_Registry_API_Data", 1, 1));
 		test = extent.startTest("suggestionSearchTextBox");
